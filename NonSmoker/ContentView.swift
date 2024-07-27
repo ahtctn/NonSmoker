@@ -6,17 +6,36 @@
 //
 
 import SwiftUI
+import AVFoundation
 
 struct ContentView: View {
+    @StateObject private var timerManager = TimerManager()
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        ZStack {
+            Color.black.ignoresSafeArea(.all).opacity(0.9)
+            CircleBackgroundView()
+            VStack(spacing: 0) {
+                HeaderView {
+                    print("Settings button tapped")
+                }
+                
+                TimerView(timerManager: timerManager)
+                Spacer()
+                
+                DefaultButtonView("I Smoked, Restart") {
+                    timerManager.resetTimer()
+                    AudioPlayerManager.shared.playSound()
+                }
+                .padding(.bottom, dynHeight * 0.05)
+            }
+            .onAppear {
+                timerManager.startTimer()
+            }
+            
         }
-        .padding()
-    }
+            
+        }
 }
 
 #Preview {
