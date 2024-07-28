@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7B5083412C54E9270051552A /* NonSmokerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5083402C54E9270051552A /* NonSmokerApp.swift */; };
-		7B5083432C54E9270051552A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5083422C54E9270051552A /* ContentView.swift */; };
+		7B5083432C54E9270051552A /* HomeDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5083422C54E9270051552A /* HomeDelegate.swift */; };
 		7B5083452C54E9290051552A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B5083442C54E9290051552A /* Assets.xcassets */; };
 		7B5083482C54E9290051552A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B5083472C54E9290051552A /* Preview Assets.xcassets */; };
 		7B50834F2C54E9E90051552A /* TimerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B50834E2C54E9E90051552A /* TimerManager.swift */; };
@@ -18,14 +18,26 @@
 		7B5083572C54EA0A0051552A /* FontHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5083562C54EA0A0051552A /* FontHandler.swift */; };
 		7B5083592C54EA120051552A /* CircleBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5083582C54EA110051552A /* CircleBackgroundView.swift */; };
 		7B50835C2C54EAC80051552A /* AudioPlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B50835A2C54EAC80051552A /* AudioPlayerManager.swift */; };
-		7B50835F2C54EAE30051552A /* laugh.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7B50835D2C54EAE30051552A /* laugh.mp3 */; };
 		7B5083622C54ECF30051552A /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5083612C54ECF30051552A /* HeaderView.swift */; };
+		7B7189AE2C5682F4006F106B /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7189AD2C5682F4006F106B /* NotificationManager.swift */; };
+		7B7189B32C5683E2006F106B /* ISmokedPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7189B22C5683E2006F106B /* ISmokedPopupView.swift */; };
+		7B7189B62C56849B006F106B /* LottieAnimationViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7189B52C56849B006F106B /* LottieAnimationViewHelper.swift */; };
+		7B7189C02C56873A006F106B /* ISmokedPopupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7189BF2C56873A006F106B /* ISmokedPopupViewModel.swift */; };
+		7B7189C82C56922E006F106B /* smoke.json in Resources */ = {isa = PBXBuildFile; fileRef = 7B7189C72C56922E006F106B /* smoke.json */; };
+		7B7189CD2C5692EC006F106B /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 7B7189CC2C5692EC006F106B /* Lottie */; };
+		7B7189CF2C569386006F106B /* deathNergis.json in Resources */ = {isa = PBXBuildFile; fileRef = 7B7189CE2C569386006F106B /* deathNergis.json */; };
+		7B7189D12C5693D6006F106B /* deathnotpro.json in Resources */ = {isa = PBXBuildFile; fileRef = 7B7189D02C5693D6006F106B /* deathnotpro.json */; };
+		7B7189D92C569A70006F106B /* again.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7B7189D82C569A70006F106B /* again.mp3 */; };
+		7BA24BF82C55AD1B00A0CE0C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA24BF72C55AD1B00A0CE0C /* MainView.swift */; };
+		7BA24BFA2C55ADEA00A0CE0C /* AchievementsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA24BF92C55ADEA00A0CE0C /* AchievementsView.swift */; };
+		7BA24BFC2C55ADF800A0CE0C /* HealthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA24BFB2C55ADF800A0CE0C /* HealthView.swift */; };
+		7BA24BFF2C55B0C700A0CE0C /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA24BFE2C55B0C700A0CE0C /* MainViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7B50833D2C54E9270051552A /* NonSmoker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NonSmoker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B5083402C54E9270051552A /* NonSmokerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonSmokerApp.swift; sourceTree = "<group>"; };
-		7B5083422C54E9270051552A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7B5083422C54E9270051552A /* HomeDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDelegate.swift; sourceTree = "<group>"; };
 		7B5083442C54E9290051552A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B5083472C54E9290051552A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7B50834E2C54E9E90051552A /* TimerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerManager.swift; sourceTree = "<group>"; };
@@ -35,8 +47,21 @@
 		7B5083562C54EA0A0051552A /* FontHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontHandler.swift; sourceTree = "<group>"; };
 		7B5083582C54EA110051552A /* CircleBackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleBackgroundView.swift; sourceTree = "<group>"; };
 		7B50835A2C54EAC80051552A /* AudioPlayerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlayerManager.swift; sourceTree = "<group>"; };
-		7B50835D2C54EAE30051552A /* laugh.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = laugh.mp3; sourceTree = "<group>"; };
 		7B5083612C54ECF30051552A /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		7B7189AA2C567BAF006F106B /* NonSmoker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NonSmoker.entitlements; sourceTree = "<group>"; };
+		7B7189AB2C567D43006F106B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		7B7189AD2C5682F4006F106B /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		7B7189B22C5683E2006F106B /* ISmokedPopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISmokedPopupView.swift; sourceTree = "<group>"; };
+		7B7189B52C56849B006F106B /* LottieAnimationViewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieAnimationViewHelper.swift; sourceTree = "<group>"; };
+		7B7189BF2C56873A006F106B /* ISmokedPopupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISmokedPopupViewModel.swift; sourceTree = "<group>"; };
+		7B7189C72C56922E006F106B /* smoke.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = smoke.json; sourceTree = "<group>"; };
+		7B7189CE2C569386006F106B /* deathNergis.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = deathNergis.json; sourceTree = "<group>"; };
+		7B7189D02C5693D6006F106B /* deathnotpro.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = deathnotpro.json; sourceTree = "<group>"; };
+		7B7189D82C569A70006F106B /* again.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = again.mp3; sourceTree = "<group>"; };
+		7BA24BF72C55AD1B00A0CE0C /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		7BA24BF92C55ADEA00A0CE0C /* AchievementsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsView.swift; sourceTree = "<group>"; };
+		7BA24BFB2C55ADF800A0CE0C /* HealthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthView.swift; sourceTree = "<group>"; };
+		7BA24BFE2C55B0C700A0CE0C /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B7189CD2C5692EC006F106B /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +81,7 @@
 			children = (
 				7B50833F2C54E9270051552A /* NonSmoker */,
 				7B50833E2C54E9270051552A /* Products */,
+				7B7189C92C5692D8006F106B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,17 +96,14 @@
 		7B50833F2C54E9270051552A /* NonSmoker */ = {
 			isa = PBXGroup;
 			children = (
+				7B7189B02C56836E006F106B /* Helpers */,
+				7B7189AC2C5682E1006F106B /* Delegation */,
+				7B7189AB2C567D43006F106B /* Info.plist */,
+				7B7189AA2C567BAF006F106B /* NonSmoker.entitlements */,
+				7BA24BFD2C55B0BE00A0CE0C /* ViewModel */,
 				7B5083602C54ECEC0051552A /* View */,
 				7B50835E2C54EAE30051552A /* source */,
 				7B50835B2C54EAC80051552A /* Manager */,
-				7B5083502C54E9F50051552A /* DefaultButtonView.swift */,
-				7B5083402C54E9270051552A /* NonSmokerApp.swift */,
-				7B50834E2C54E9E90051552A /* TimerManager.swift */,
-				7B5083422C54E9270051552A /* ContentView.swift */,
-				7B5083542C54EA050051552A /* TimerView.swift */,
-				7B5083522C54E9FC0051552A /* Constants.swift */,
-				7B5083562C54EA0A0051552A /* FontHandler.swift */,
-				7B5083582C54EA110051552A /* CircleBackgroundView.swift */,
 				7B5083442C54E9290051552A /* Assets.xcassets */,
 				7B5083462C54E9290051552A /* Preview Content */,
 			);
@@ -97,7 +121,9 @@
 		7B50835B2C54EAC80051552A /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				7B50834E2C54E9E90051552A /* TimerManager.swift */,
 				7B50835A2C54EAC80051552A /* AudioPlayerManager.swift */,
+				7B7189AD2C5682F4006F106B /* NotificationManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -105,7 +131,8 @@
 		7B50835E2C54EAE30051552A /* source */ = {
 			isa = PBXGroup;
 			children = (
-				7B50835D2C54EAE30051552A /* laugh.mp3 */,
+				7B7189BC2C5686E1006F106B /* animation */,
+				7B7189BB2C5686DE006F106B /* audio */,
 			);
 			path = source;
 			sourceTree = "<group>";
@@ -113,9 +140,85 @@
 		7B5083602C54ECEC0051552A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7B7189B42C56848D006F106B /* HelperView */,
+				7B7189B12C5683D6006F106B /* Popup */,
+				7B5083582C54EA110051552A /* CircleBackgroundView.swift */,
+				7B5083542C54EA050051552A /* TimerView.swift */,
+				7B5083502C54E9F50051552A /* DefaultButtonView.swift */,
 				7B5083612C54ECF30051552A /* HeaderView.swift */,
+				7BA24BF72C55AD1B00A0CE0C /* MainView.swift */,
+				7BA24BF92C55ADEA00A0CE0C /* AchievementsView.swift */,
+				7BA24BFB2C55ADF800A0CE0C /* HealthView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		7B7189AC2C5682E1006F106B /* Delegation */ = {
+			isa = PBXGroup;
+			children = (
+				7B5083402C54E9270051552A /* NonSmokerApp.swift */,
+				7B5083422C54E9270051552A /* HomeDelegate.swift */,
+			);
+			path = Delegation;
+			sourceTree = "<group>";
+		};
+		7B7189B02C56836E006F106B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				7B5083562C54EA0A0051552A /* FontHandler.swift */,
+				7B5083522C54E9FC0051552A /* Constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		7B7189B12C5683D6006F106B /* Popup */ = {
+			isa = PBXGroup;
+			children = (
+				7B7189B22C5683E2006F106B /* ISmokedPopupView.swift */,
+			);
+			path = Popup;
+			sourceTree = "<group>";
+		};
+		7B7189B42C56848D006F106B /* HelperView */ = {
+			isa = PBXGroup;
+			children = (
+				7B7189B52C56849B006F106B /* LottieAnimationViewHelper.swift */,
+			);
+			path = HelperView;
+			sourceTree = "<group>";
+		};
+		7B7189BB2C5686DE006F106B /* audio */ = {
+			isa = PBXGroup;
+			children = (
+				7B7189D82C569A70006F106B /* again.mp3 */,
+			);
+			path = audio;
+			sourceTree = "<group>";
+		};
+		7B7189BC2C5686E1006F106B /* animation */ = {
+			isa = PBXGroup;
+			children = (
+				7B7189C72C56922E006F106B /* smoke.json */,
+				7B7189CE2C569386006F106B /* deathNergis.json */,
+				7B7189D02C5693D6006F106B /* deathnotpro.json */,
+			);
+			path = animation;
+			sourceTree = "<group>";
+		};
+		7B7189C92C5692D8006F106B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7BA24BFD2C55B0BE00A0CE0C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7BA24BFE2C55B0C700A0CE0C /* MainViewModel.swift */,
+				7B7189BF2C56873A006F106B /* ISmokedPopupViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,6 +237,9 @@
 			dependencies = (
 			);
 			name = NonSmoker;
+			packageProductDependencies = (
+				7B7189CC2C5692EC006F106B /* Lottie */,
+			);
 			productName = NonSmoker;
 			productReference = 7B50833D2C54E9270051552A /* NonSmoker.app */;
 			productType = "com.apple.product-type.application";
@@ -162,6 +268,9 @@
 				Base,
 			);
 			mainGroup = 7B5083342C54E9270051552A;
+			packageReferences = (
+				7B7189B72C56850C006F106B /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = 7B50833E2C54E9270051552A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -177,8 +286,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B5083482C54E9290051552A /* Preview Assets.xcassets in Resources */,
+				7B7189C82C56922E006F106B /* smoke.json in Resources */,
+				7B7189D92C569A70006F106B /* again.mp3 in Resources */,
+				7B7189CF2C569386006F106B /* deathNergis.json in Resources */,
 				7B5083452C54E9290051552A /* Assets.xcassets in Resources */,
-				7B50835F2C54EAE30051552A /* laugh.mp3 in Resources */,
+				7B7189D12C5693D6006F106B /* deathnotpro.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,13 +304,21 @@
 				7B5083552C54EA050051552A /* TimerView.swift in Sources */,
 				7B5083532C54E9FC0051552A /* Constants.swift in Sources */,
 				7B5083592C54EA120051552A /* CircleBackgroundView.swift in Sources */,
+				7B7189B62C56849B006F106B /* LottieAnimationViewHelper.swift in Sources */,
 				7B5083572C54EA0A0051552A /* FontHandler.swift in Sources */,
+				7BA24BFA2C55ADEA00A0CE0C /* AchievementsView.swift in Sources */,
 				7B50834F2C54E9E90051552A /* TimerManager.swift in Sources */,
 				7B5083622C54ECF30051552A /* HeaderView.swift in Sources */,
-				7B5083432C54E9270051552A /* ContentView.swift in Sources */,
+				7B7189C02C56873A006F106B /* ISmokedPopupViewModel.swift in Sources */,
+				7BA24BFF2C55B0C700A0CE0C /* MainViewModel.swift in Sources */,
+				7B5083432C54E9270051552A /* HomeDelegate.swift in Sources */,
+				7BA24BF82C55AD1B00A0CE0C /* MainView.swift in Sources */,
 				7B5083512C54E9F50051552A /* DefaultButtonView.swift in Sources */,
 				7B50835C2C54EAC80051552A /* AudioPlayerManager.swift in Sources */,
+				7B7189B32C5683E2006F106B /* ISmokedPopupView.swift in Sources */,
+				7B7189AE2C5682F4006F106B /* NotificationManager.swift in Sources */,
 				7B5083412C54E9270051552A /* NonSmokerApp.swift in Sources */,
+				7BA24BFC2C55ADF800A0CE0C /* HealthView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,12 +449,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NonSmoker/NonSmoker.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"NonSmoker/Preview Content\"";
 				DEVELOPMENT_TEAM = KTK732WRHB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NonSmoker/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -358,12 +480,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NonSmoker/NonSmoker.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"NonSmoker/Preview Content\"";
 				DEVELOPMENT_TEAM = KTK732WRHB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NonSmoker/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -404,6 +528,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7B7189B72C56850C006F106B /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7B7189CC2C5692EC006F106B /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7B7189B72C56850C006F106B /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7B5083352C54E9270051552A /* Project object */;
 }

@@ -13,8 +13,8 @@ class AudioPlayerManager {
     static let shared = AudioPlayerManager()
     private init () {}
     
-    func playSound() {
-        guard let url = Bundle.main.url(forResource: "laugh", withExtension: "mp3") else {
+    func playSound(res: String, format: String) {
+        guard let url = Bundle.main.url(forResource: res, withExtension: format) else {
             print("Sound file not found")
             return
         }
