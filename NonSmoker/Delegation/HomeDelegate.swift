@@ -38,54 +38,8 @@ struct HomeDelegate: View {
             if mainVM.activePopup != nil {
                 switch mainVM.activePopup {
                 case .know:
-                    
-                    
-                    ZStack {
-                        AnimatedGradient(colors: [Color.red, Color.orange, Color.yellow]).ignoresSafeArea(.all)
-                        VStack {
-                            Spacer()
-                            
-                            VStack(spacing: 15) {
-                                Spacer()
-                                LottieAnimationViewHelper(name: "doctor", loopMode: .loop)
-                                    .frame(width: dynWidth * 0.4, height: dynWidth * 0.4)
-                                Spacer()
-                                if let advice = adviceVM.randomAdvice {
-                                    let title = advice.title
-                                    let subtitle = advice.subtitle
-                                    
-                                    VStack(alignment: .leading, spacing: 30) {
-                                        Text(title)
-                                            .titleModifier(.mint)
-                                            .background(
-                                                RoundedRectangle(cornerRadius: 8)
-                                                    .fill(
-                                                        Color.white
-                                                    )
-                                            )
-                                        
-                                        Text(subtitle)
-                                            .subtitleModifier()
-                                        
-                                    }
-                                    .padding([.leading, .trailing], dynWidth * 0.0426)
-                                    .foregroundStyle(.white)
-                                    
-                                }
-                                Spacer()
-                            }
-                            
-                            Spacer()
-                            DefaultButtonView("Get Advice") {
-                                adviceVM.fetchNewAdvice()
-                            }
-                        }
-                        
-                        
-                       
-                        
-                       
-                    }
+                    AdviceView()
+                        .environmentObject(mainVM)
                     
                     
                 case .smokedRestart:

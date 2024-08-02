@@ -12,13 +12,13 @@ struct TitleModifier: ViewModifier {
     func body(content: Content) -> some View {
         content
             .bold()
-            .font(.system(size: 25))
+            .font(.system(size: 33))
             .foregroundStyle(color)
-            .padding(.all, dynWidth * 0.013)
+            .padding(.all, dynWidth * 0.03)
         
             .overlay {
                 RoundedRectangle(cornerRadius: 8)
-                    .stroke(.mint, lineWidth: 3)
+                    .stroke(.white, lineWidth: 3)
             }
             
     }

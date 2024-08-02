@@ -22,7 +22,9 @@ struct MainView: View {
                     print("Settings button tapped")
                     
                 } knowAct: {
-                    mainViewModel.activePopup = .know
+                    withAnimation(.smooth) {
+                        mainViewModel.activePopup = .know
+                    }
                 }
 
                 
