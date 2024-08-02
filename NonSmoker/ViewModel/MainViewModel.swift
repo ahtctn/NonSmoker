@@ -21,8 +21,8 @@ class MainViewModel: ObservableObject {
         appearance.stackedLayoutAppearance.normal.iconColor = UIColor.systemGray
         appearance.stackedLayoutAppearance.normal.titleTextAttributes = [.foregroundColor: UIColor.systemGray]
         
-        appearance.stackedLayoutAppearance.selected.iconColor = UIColor.systemMint
-        appearance.stackedLayoutAppearance.selected.titleTextAttributes = [.foregroundColor: UIColor.systemMint]
+        appearance.stackedLayoutAppearance.selected.iconColor = UIColor.yellow
+        appearance.stackedLayoutAppearance.selected.titleTextAttributes = [.foregroundColor: UIColor.yellow]
         
         
         UITabBar.appearance().standardAppearance = appearance

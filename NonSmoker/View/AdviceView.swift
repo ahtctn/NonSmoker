@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct AdviceView: View {
-    @StateObject private var vm = AdviceViewModel()
+    @EnvironmentObject private var vm: AdviceViewModel
     @EnvironmentObject var mainVM: MainViewModel
+    
+
     var body: some View {
         ZStack {
             AnimatedGradient(colors: [Color.red, Color.orange, Color.yellow]).ignoresSafeArea(.all)
@@ -19,7 +21,7 @@ struct AdviceView: View {
                 VStack(spacing: 15) {
                     Spacer()
                     LottieAnimationViewHelper(name: "doctor", loopMode: .loop)
-                        .frame(width: dynWidth * 0.4, height: dynWidth * 0.4)
+                        .frame(width: dynWidth * 0.6, height: dynWidth * 0.6)
                     Spacer()
                     if let advice = vm.randomAdvice {
                         let title = advice.title
@@ -27,16 +29,18 @@ struct AdviceView: View {
                         
                         VStack(alignment: .leading, spacing: 30) {
                             Text(title)
-                                .titleModifier(.white)
+                                .titleModifier(.black)
                                 .background(
                                     RoundedRectangle(cornerRadius: 8)
-                                        .fill(
-                                            ConstantColors.rectangleLinearColor
-                                        )
+                                        .fill(.white)
                                 )
                             
                             Text(subtitle)
-                                .subtitleModifier()
+                                .subtitleModifier(.black)
+                                .background(
+                                    RoundedRectangle(cornerRadius: 8)
+                                        .fill(.white)
+                                )
                             
                         }
                         .padding([.leading, .trailing], dynWidth * 0.0426)
@@ -46,10 +50,6 @@ struct AdviceView: View {
                     Spacer()
                 }
                 
-                Spacer()
-                DefaultButtonView("Get Advice") {
-                    vm.fetchNewAdvice()
-                }
             }
             
             XMarkView {
@@ -67,4 +67,5 @@ struct AdviceView: View {
 #Preview {
     AdviceView()
         .environmentObject(MainViewModel())
+        .environmentObject(AdviceViewModel())
 }

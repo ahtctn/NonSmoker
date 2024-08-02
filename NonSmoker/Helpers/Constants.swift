@@ -15,8 +15,8 @@ var dynHeight = UIScreen.main.bounds.height
 enum ConstantColors {
     static var rectangleLinearColor: LinearGradient {
         LinearGradient(stops: [
-            .init(color: Color.blue.opacity(1), location: 0.6),
-            .init(color: Color.mint.opacity(1), location: 1)
+            .init(color: Color.yellow.opacity(1), location: 0.6),
+            .init(color: Color.yellow.opacity(1), location: 1)
         ], startPoint: .bottomLeading, endPoint: .topTrailing)
     }
     
@@ -27,4 +27,12 @@ enum ConstantColors {
                     endPoint: .bottom
                 )
     }
+    
+    static var baseColor: LinearGradient {
+        LinearGradient(stops: [
+            .init(color: Color("base1"), location: 0.6),
+            .init(color: Color("base2"), location: 1)
+        ], startPoint: .top, endPoint: .bottom)
+    }
+    
 }

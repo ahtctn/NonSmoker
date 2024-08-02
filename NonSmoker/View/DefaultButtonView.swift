@@ -58,12 +58,16 @@ struct DefaultButtonView: View {
         Button(action: {
             action()
         }, label: {
-            RoundedRectangle(cornerRadius: 30)
+            RoundedRectangle(cornerRadius: 4)
                 .fill(backgroundColor)
                 .frame(width: dynWidth * width,
                        height: dynHeight * height)
                 .overlay {
                     onBackgroundView
+                }
+                .overlay {
+                    RoundedRectangle(cornerRadius: 4)
+                        .stroke(.black, lineWidth: 4)
                 }
         })
     }
@@ -79,9 +83,9 @@ struct DefaultButtonView: View {
 extension DefaultButtonView {
     
     private var backgroundColor: LinearGradient {
-        LinearGradient(stops: [.init(color: Color.blue,
+        LinearGradient(stops: [.init(color: .yellow,
                                      location: 0),
-                               .init(color: Color.mint,
+                               .init(color: .yellow,
                                      location: 1)],
                        startPoint: .leading,
                        endPoint: .trailing)
@@ -99,8 +103,9 @@ extension DefaultButtonView {
                         .padding(.trailing,20)
                 }
                 Text(title)
-                    .foregroundStyle(.white)
-                    .font(FontHandler.makeFont(.sansSemiBold16))
+                    .foregroundStyle(.black)
+                    .font(.system(size: 19))
+                    .bold()
                     .padding(.trailing,isPlayButton ? 20 : 0)
                 
                 Spacer()

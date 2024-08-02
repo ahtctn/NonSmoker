@@ -8,17 +8,23 @@
 import SwiftUI
 
 struct SubtitleModifier: ViewModifier {
+    var color: Color
     func body(content: Content) -> some View {
         content
             .font(.title3)
             .font(.system(size: 16))
-            .foregroundStyle(.white)
+            .foregroundStyle(color)
             .multilineTextAlignment(.leading)
+            .padding(.all, dynWidth * 0.08)
+            .overlay {
+                RoundedRectangle(cornerRadius: 8)
+                    .stroke(color, lineWidth: 3)
+            }
     }
 }
 
 extension View {
-    func subtitleModifier() -> some View {
-        self.modifier(SubtitleModifier())
+    func subtitleModifier(_ color: Color) -> some View {
+        self.modifier(SubtitleModifier(color: color))
     }
 }

@@ -28,6 +28,9 @@
 		7B5083592C54EA120051552A /* CircleBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5083582C54EA110051552A /* CircleBackgroundView.swift */; };
 		7B50835C2C54EAC80051552A /* AudioPlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B50835A2C54EAC80051552A /* AudioPlayerManager.swift */; };
 		7B5083622C54ECF30051552A /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5083612C54ECF30051552A /* HeaderView.swift */; };
+		7B70E37A2C5D6CCD006B53DD /* Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B70E3792C5D6CCD006B53DD /* Hex.swift */; };
+		7B70E37C2C5D7246006B53DD /* AnimatedGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B70E37B2C5D7246006B53DD /* AnimatedGradient.swift */; };
+		7B70E37E2C5DA833006B53DD /* restartSmoking.json in Resources */ = {isa = PBXBuildFile; fileRef = 7B70E37D2C5DA833006B53DD /* restartSmoking.json */; };
 		7B7189AE2C5682F4006F106B /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7189AD2C5682F4006F106B /* NotificationManager.swift */; };
 		7B7189B32C5683E2006F106B /* ISmokedPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7189B22C5683E2006F106B /* ISmokedPopupView.swift */; };
 		7B7189B62C56849B006F106B /* LottieAnimationViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7189B52C56849B006F106B /* LottieAnimationViewHelper.swift */; };
@@ -66,6 +69,9 @@
 		7B5083582C54EA110051552A /* CircleBackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleBackgroundView.swift; sourceTree = "<group>"; };
 		7B50835A2C54EAC80051552A /* AudioPlayerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlayerManager.swift; sourceTree = "<group>"; };
 		7B5083612C54ECF30051552A /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		7B70E3792C5D6CCD006B53DD /* Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hex.swift; sourceTree = "<group>"; };
+		7B70E37B2C5D7246006B53DD /* AnimatedGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedGradient.swift; sourceTree = "<group>"; };
+		7B70E37D2C5DA833006B53DD /* restartSmoking.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = restartSmoking.json; sourceTree = "<group>"; };
 		7B7189AA2C567BAF006F106B /* NonSmoker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NonSmoker.entitlements; sourceTree = "<group>"; };
 		7B7189AB2C567D43006F106B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		7B7189AD2C5682F4006F106B /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
@@ -101,6 +107,7 @@
 				7B41F2AC2C5D54DA00DE7F7A /* TitleModifier.swift */,
 				7B41F2AE2C5D55DE00DE7F7A /* SubtitleModifier.swift */,
 				7B41F2B22C5D612800DE7F7A /* XMarkView.swift */,
+				7B70E37B2C5D7246006B53DD /* AnimatedGradient.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -208,6 +215,7 @@
 				7B5083562C54EA0A0051552A /* FontHandler.swift */,
 				7B5083522C54E9FC0051552A /* Constants.swift */,
 				7B41F2A52C5D4D5000DE7F7A /* ActivePopup.swift */,
+				7B70E3792C5D6CCD006B53DD /* Hex.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -241,6 +249,7 @@
 			children = (
 				7B7189C72C56922E006F106B /* smoke.json */,
 				7B41F2B02C5D580000DE7F7A /* doctor.json */,
+				7B70E37D2C5DA833006B53DD /* restartSmoking.json */,
 				7B7189CE2C569386006F106B /* deathNergis.json */,
 				7B7189D02C5693D6006F106B /* deathnotpro.json */,
 			);
@@ -328,6 +337,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B70E37E2C5DA833006B53DD /* restartSmoking.json in Resources */,
 				7B5083482C54E9290051552A /* Preview Assets.xcassets in Resources */,
 				7B7189C82C56922E006F106B /* smoke.json in Resources */,
 				7B7189D92C569A70006F106B /* again.mp3 in Resources */,
@@ -360,11 +370,13 @@
 				7B41F2AB2C5D504300DE7F7A /* AdviceModel.swift in Sources */,
 				7B41F2A62C5D4D5000DE7F7A /* ActivePopup.swift in Sources */,
 				7B7189C02C56873A006F106B /* ISmokedPopupViewModel.swift in Sources */,
+				7B70E37A2C5D6CCD006B53DD /* Hex.swift in Sources */,
 				7BA24BFF2C55B0C700A0CE0C /* MainViewModel.swift in Sources */,
 				7B41F2AD2C5D54DA00DE7F7A /* TitleModifier.swift in Sources */,
 				7B5083432C54E9270051552A /* HomeDelegate.swift in Sources */,
 				7BA24BF82C55AD1B00A0CE0C /* MainView.swift in Sources */,
 				7B5083512C54E9F50051552A /* DefaultButtonView.swift in Sources */,
+				7B70E37C2C5D7246006B53DD /* AnimatedGradient.swift in Sources */,
 				7B50835C2C54EAC80051552A /* AudioPlayerManager.swift in Sources */,
 				7B7189B32C5683E2006F106B /* ISmokedPopupView.swift in Sources */,
 				7B41F2A32C5D4B9E00DE7F7A /* TopLittleButton.swift in Sources */,

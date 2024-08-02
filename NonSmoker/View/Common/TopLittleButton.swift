@@ -25,13 +25,13 @@ struct TopLittleButton: View {
         HStack {
             Text(text)
                 .foregroundStyle(.white)
-                .font(FontHandler.makeFont(.sansSemiBold12))
+                .font(.system(size: 11)).bold()
             Image(systemName: icon)
                 .resizable()
                 .scaledToFit()
                 .frame(width: dynWidth * 0.05, height: dynHeight * 0.02)
                 .padding(.vertical,3)
-                .foregroundStyle(.mint)
+                .foregroundStyle(.yellow)
         }
         .frame(height: dynHeight * 0.03)
         .onTapGesture(perform: {
@@ -39,12 +39,12 @@ struct TopLittleButton: View {
             print("22")
         })
         .background(
-            RoundedRectangle(cornerRadius: 15)
+            RoundedRectangle(cornerRadius: 2)
                 .fill(Color.black.opacity(0.7))
                 .padding(.init(top: -2, leading: -10, bottom: -2, trailing: -10))
                 .overlay(
-                    RoundedRectangle(cornerRadius: 15)
-                        .stroke(.mint)
+                    RoundedRectangle(cornerRadius: 2)
+                        .stroke(.yellow)
                         .padding(.init(top: -2, leading: -10, bottom: -2, trailing: -10))
                 )
         )

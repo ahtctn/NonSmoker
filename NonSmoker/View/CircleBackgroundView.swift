@@ -38,8 +38,7 @@ struct CircleBackgroundView: View {
     
     var body: some View {
         ZStack {
-            Color.black.opacity(0.8)
-                .opacity(isShowinBackground ? 1 : 0)
+            Color.clear.ignoresSafeArea(.all)
             Circle()
                 .fill(RadialGradient(colors: [.blue.opacity(0.5), .clear],
                                      center: .center,

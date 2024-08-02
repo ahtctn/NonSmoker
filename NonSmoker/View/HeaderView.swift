@@ -29,15 +29,25 @@ struct HeaderView: View {
                     .resizable()
                     .scaledToFit()
                     .frame(width: dynWidth * 0.05, height: dynWidth * 0.05)
-                    .foregroundStyle(.white)
+                    .foregroundStyle(.yellow)
             }
         }
         .overlay {
             HStack {
                 Spacer()
+                RoundedRectangle(cornerRadius: 2)
+                    .fill(.white)
+                    .frame(width: dynWidth * 0.3)
+                    .overlay {
+                        RoundedRectangle(cornerRadius: 2)
+                            .stroke(.black ,lineWidth: 4)
+                            .overlay {
+                                Text("Smoke-Free")
+                                    .foregroundStyle(.black)
+                                    .bold()
+                            }
+                    }
                 
-                Text("NonSmoker")
-                    .foregroundStyle(.white).bold()
                 Spacer()
             }
         }

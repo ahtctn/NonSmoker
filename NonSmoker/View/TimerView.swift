@@ -24,11 +24,8 @@ struct TimerView: View {
             Spacer()
             Text(":")
                 .foregroundStyle(.white)
-                .font(
-                    .system(size: 26)
-                )
+                .font(.system(size: 26))
                 .fontWeight(.bold)
-                .foregroundColor(.white)
             Spacer()
         }
     }
@@ -62,42 +59,28 @@ struct TimeUnitView: View {
     let timeUnit: Int
     let unit: String
     
-    private var rectangleLinearColor: LinearGradient {
-        LinearGradient(stops: [.init(color: Color.blue.opacity(1),
-                                     location: 0.6),
-                               .init(color: Color.mint.opacity(1),
-                                     location: 1)],
-                       startPoint: .bottomLeading,
-                       endPoint: .topTrailing)
-    }
-    
     var body: some View {
         VStack {
             ZStack {
-                Rectangle()
+                RoundedRectangle(cornerRadius: 4)
+                    .stroke(.black, lineWidth: 4)
                     .frame(width: 80, height: 80)
-                    .foregroundStyle(Color.clear)
-                    .background(
-                        LinearGradient(
-                            gradient: Gradient(colors: [Color.blue, Color.mint]),
-                            startPoint: .bottomLeading,
-                            endPoint: .topTrailing
-                        ).opacity(0.5)
-                    )
-                    .overlay(
-                        ZStack {
-                            Text(String(format: "%02d", timeUnit))
-                                .font(
-                                    .system(size: 34)
-                                )
-                                .fontWeight(.bold)
-                                .foregroundColor(.white)
-                            
-                            unitView
-                        }
-                        
-                    )
-                    .cornerRadius(10)
+                    .overlay {
+                        RoundedRectangle(cornerRadius: 4)
+                            .fill(ConstantColors.rectangleLinearColor)
+                            .overlay {
+                                ZStack {
+                                    Text(String(format: "%02d", timeUnit))
+                                        .font(
+                                            .system(size: 34)
+                                        )
+                                        .fontWeight(.bold)
+                                        .foregroundColor(.black)
+                                    
+                                    unitView
+                                }
+                            }
+                    }
             }
             
             
@@ -105,24 +88,24 @@ struct TimeUnitView: View {
     }
     
     private var unitView: some View {
-        VStack {
-            HStack {
-                Text(unit)
-                    .font(.footnote)
-                    .foregroundColor(.white)
-                    .padding(.all, dynWidth * 0.01333)
-                    .background(
-                        RoundedRectangle(cornerRadius: 10)
-                            .fill(LinearGradient(
-                                gradient: Gradient(colors: [Color.black, Color.gray]),
-                                startPoint: .bottomLeading,
-                                endPoint: .topTrailing
-                            ))
-                            .opacity(0.3)
-                    )
-                Spacer()
+        RoundedRectangle(cornerRadius: 4)
+            .stroke(.black, lineWidth: 2)
+            .overlay {
+                VStack {
+                    HStack {
+                        Text(unit)
+                            .font(.footnote)
+                            .foregroundColor(.black)
+                            .padding(.all, dynWidth * 0.01333)
+                            .background(
+                                RoundedRectangle(cornerRadius: 10)
+                                    .fill(ConstantColors.rectangleLinearColor)
+                                    .opacity(0.3)
+                            )
+                        Spacer()
+                    }
+                    Spacer()
+                }
             }
-            Spacer()
-        }
     }
 }

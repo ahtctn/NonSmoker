@@ -22,6 +22,7 @@ struct HomeDelegate: View {
                         Label("Home", systemImage: "house.fill")
                     }
                 AchievementsView()
+                    .environmentObject(mainVM)
                     .tabItem {
                         Label("Achievements", systemImage: "trophy.fill")
                     }
@@ -40,7 +41,7 @@ struct HomeDelegate: View {
                 case .know:
                     AdviceView()
                         .environmentObject(mainVM)
-                    
+                        .environmentObject(adviceVM)
                     
                 case .smokedRestart:
                     Color.black.opacity(0.6).ignoresSafeArea(.all)
@@ -60,23 +61,5 @@ struct HomeDelegate: View {
 #Preview {
     HomeDelegate()
         .environmentObject(MainViewModel())
-}
-
-
-struct AnimatedGradient: View {
-    @State private var gradientStart = UnitPoint(x: 0, y: -1)
-    @State private var gradientEnd = UnitPoint(x: 1, y: 0)
-    
-    var colors: [Color]
-    
-    var body: some View {
-        LinearGradient(gradient: Gradient(colors: colors), startPoint: gradientStart, endPoint: gradientEnd)
-            .onAppear {
-                withAnimation(Animation.linear(duration: 8).repeatForever(autoreverses: true)) {
-                    gradientStart = UnitPoint(x: 1, y: 1)
-                    gradientEnd = UnitPoint(x: 0, y: 1)
-                }
-            }
-    }
 }
 

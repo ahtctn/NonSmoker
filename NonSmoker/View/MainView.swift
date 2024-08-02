@@ -14,8 +14,7 @@ struct MainView: View {
     
     var body: some View {
         ZStack {
-            Color.black.ignoresSafeArea(.all).opacity(0.9)
-            CircleBackgroundView()
+            ConstantColors.baseColor.ignoresSafeArea(.all)
             VStack(spacing: 0) {
                 
                 HeaderView {
@@ -38,7 +37,6 @@ struct MainView: View {
             }
             .onAppear {
                 timerManager.startTimer()
-                
             }
         }
     }
