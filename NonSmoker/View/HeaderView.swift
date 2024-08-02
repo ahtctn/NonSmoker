@@ -9,17 +9,18 @@ import SwiftUI
 
 struct HeaderView: View {
     var act: () -> ()
+    var knowAct: () -> ()
     var body: some View {
         HStack {
             Image("no-smoking")
                 .resizable()
                 .scaledToFit()
-                .frame(width: dynWidth * 0.09, height: dynWidth * 0.09)
+                .frame(width: dynWidth * 0.06, height: dynWidth * 0.06)
             Spacer()
             
-            Text("NonSmoker")
-                .foregroundStyle(.white).bold()
-            Spacer()
+            TopLittleButton("KNOW", i: "book.pages.fill") {
+                knowAct()
+            }
             
             Button {
                 act()
@@ -27,8 +28,17 @@ struct HeaderView: View {
                 Image(systemName: "gear")
                     .resizable()
                     .scaledToFit()
-                    .frame(width: dynWidth * 0.07, height: dynWidth * 0.07)
+                    .frame(width: dynWidth * 0.05, height: dynWidth * 0.05)
                     .foregroundStyle(.white)
+            }
+        }
+        .overlay {
+            HStack {
+                Spacer()
+                
+                Text("NonSmoker")
+                    .foregroundStyle(.white).bold()
+                Spacer()
             }
         }
         .frame(width: dynWidth * 0.9)
@@ -36,7 +46,10 @@ struct HeaderView: View {
 }
 
 #Preview {
-    HeaderView(act: {})
+    ZStack {
+        Color.black.ignoresSafeArea(.all)
+        HeaderView(act: {}, knowAct: {})
+    }
 }
 
 

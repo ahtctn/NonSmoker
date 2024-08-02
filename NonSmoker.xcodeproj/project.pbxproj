@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B41F2A32C5D4B9E00DE7F7A /* TopLittleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B41F2A22C5D4B9E00DE7F7A /* TopLittleButton.swift */; };
+		7B41F2A62C5D4D5000DE7F7A /* ActivePopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B41F2A52C5D4D5000DE7F7A /* ActivePopup.swift */; };
+		7B41F2A82C5D4F0200DE7F7A /* AdviceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B41F2A72C5D4F0200DE7F7A /* AdviceViewModel.swift */; };
+		7B41F2AB2C5D504300DE7F7A /* AdviceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B41F2AA2C5D504300DE7F7A /* AdviceModel.swift */; };
+		7B41F2AD2C5D54DA00DE7F7A /* TitleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B41F2AC2C5D54DA00DE7F7A /* TitleModifier.swift */; };
+		7B41F2AF2C5D55DE00DE7F7A /* SubtitleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B41F2AE2C5D55DE00DE7F7A /* SubtitleModifier.swift */; };
+		7B41F2B12C5D580000DE7F7A /* doctor.json in Resources */ = {isa = PBXBuildFile; fileRef = 7B41F2B02C5D580000DE7F7A /* doctor.json */; };
 		7B5083412C54E9270051552A /* NonSmokerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5083402C54E9270051552A /* NonSmokerApp.swift */; };
 		7B5083432C54E9270051552A /* HomeDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5083422C54E9270051552A /* HomeDelegate.swift */; };
 		7B5083452C54E9290051552A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B5083442C54E9290051552A /* Assets.xcassets */; };
@@ -35,6 +42,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7B41F2A22C5D4B9E00DE7F7A /* TopLittleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopLittleButton.swift; sourceTree = "<group>"; };
+		7B41F2A52C5D4D5000DE7F7A /* ActivePopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivePopup.swift; sourceTree = "<group>"; };
+		7B41F2A72C5D4F0200DE7F7A /* AdviceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdviceViewModel.swift; sourceTree = "<group>"; };
+		7B41F2AA2C5D504300DE7F7A /* AdviceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdviceModel.swift; sourceTree = "<group>"; };
+		7B41F2AC2C5D54DA00DE7F7A /* TitleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleModifier.swift; sourceTree = "<group>"; };
+		7B41F2AE2C5D55DE00DE7F7A /* SubtitleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtitleModifier.swift; sourceTree = "<group>"; };
+		7B41F2B02C5D580000DE7F7A /* doctor.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = doctor.json; sourceTree = "<group>"; };
 		7B50833D2C54E9270051552A /* NonSmoker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NonSmoker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B5083402C54E9270051552A /* NonSmokerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonSmokerApp.swift; sourceTree = "<group>"; };
 		7B5083422C54E9270051552A /* HomeDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +90,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7B41F2A12C5D4B9400DE7F7A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				7B41F2A22C5D4B9E00DE7F7A /* TopLittleButton.swift */,
+				7B41F2AC2C5D54DA00DE7F7A /* TitleModifier.swift */,
+				7B41F2AE2C5D55DE00DE7F7A /* SubtitleModifier.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		7B41F2A92C5D503C00DE7F7A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7B41F2AA2C5D504300DE7F7A /* AdviceModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		7B5083342C54E9270051552A = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +128,7 @@
 		7B50833F2C54E9270051552A /* NonSmoker */ = {
 			isa = PBXGroup;
 			children = (
+				7B41F2A92C5D503C00DE7F7A /* Model */,
 				7B7189B02C56836E006F106B /* Helpers */,
 				7B7189AC2C5682E1006F106B /* Delegation */,
 				7B7189AB2C567D43006F106B /* Info.plist */,
@@ -140,6 +173,7 @@
 		7B5083602C54ECEC0051552A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7B41F2A12C5D4B9400DE7F7A /* Common */,
 				7B7189B42C56848D006F106B /* HelperView */,
 				7B7189B12C5683D6006F106B /* Popup */,
 				7B5083582C54EA110051552A /* CircleBackgroundView.swift */,
@@ -167,6 +201,7 @@
 			children = (
 				7B5083562C54EA0A0051552A /* FontHandler.swift */,
 				7B5083522C54E9FC0051552A /* Constants.swift */,
+				7B41F2A52C5D4D5000DE7F7A /* ActivePopup.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -199,6 +234,7 @@
 			isa = PBXGroup;
 			children = (
 				7B7189C72C56922E006F106B /* smoke.json */,
+				7B41F2B02C5D580000DE7F7A /* doctor.json */,
 				7B7189CE2C569386006F106B /* deathNergis.json */,
 				7B7189D02C5693D6006F106B /* deathnotpro.json */,
 			);
@@ -216,6 +252,7 @@
 			isa = PBXGroup;
 			children = (
 				7BA24BFE2C55B0C700A0CE0C /* MainViewModel.swift */,
+				7B41F2A72C5D4F0200DE7F7A /* AdviceViewModel.swift */,
 				7B7189BF2C56873A006F106B /* ISmokedPopupViewModel.swift */,
 			);
 			path = ViewModel;
@@ -291,6 +328,7 @@
 				7B7189CF2C569386006F106B /* deathNergis.json in Resources */,
 				7B5083452C54E9290051552A /* Assets.xcassets in Resources */,
 				7B7189D12C5693D6006F106B /* deathnotpro.json in Resources */,
+				7B41F2B12C5D580000DE7F7A /* doctor.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,17 +343,23 @@
 				7B5083532C54E9FC0051552A /* Constants.swift in Sources */,
 				7B5083592C54EA120051552A /* CircleBackgroundView.swift in Sources */,
 				7B7189B62C56849B006F106B /* LottieAnimationViewHelper.swift in Sources */,
+				7B41F2AF2C5D55DE00DE7F7A /* SubtitleModifier.swift in Sources */,
 				7B5083572C54EA0A0051552A /* FontHandler.swift in Sources */,
+				7B41F2A82C5D4F0200DE7F7A /* AdviceViewModel.swift in Sources */,
 				7BA24BFA2C55ADEA00A0CE0C /* AchievementsView.swift in Sources */,
 				7B50834F2C54E9E90051552A /* TimerManager.swift in Sources */,
 				7B5083622C54ECF30051552A /* HeaderView.swift in Sources */,
+				7B41F2AB2C5D504300DE7F7A /* AdviceModel.swift in Sources */,
+				7B41F2A62C5D4D5000DE7F7A /* ActivePopup.swift in Sources */,
 				7B7189C02C56873A006F106B /* ISmokedPopupViewModel.swift in Sources */,
 				7BA24BFF2C55B0C700A0CE0C /* MainViewModel.swift in Sources */,
+				7B41F2AD2C5D54DA00DE7F7A /* TitleModifier.swift in Sources */,
 				7B5083432C54E9270051552A /* HomeDelegate.swift in Sources */,
 				7BA24BF82C55AD1B00A0CE0C /* MainView.swift in Sources */,
 				7B5083512C54E9F50051552A /* DefaultButtonView.swift in Sources */,
 				7B50835C2C54EAC80051552A /* AudioPlayerManager.swift in Sources */,
 				7B7189B32C5683E2006F106B /* ISmokedPopupView.swift in Sources */,
+				7B41F2A32C5D4B9E00DE7F7A /* TopLittleButton.swift in Sources */,
 				7B7189AE2C5682F4006F106B /* NotificationManager.swift in Sources */,
 				7B5083412C54E9270051552A /* NonSmokerApp.swift in Sources */,
 				7BA24BFC2C55ADF800A0CE0C /* HealthView.swift in Sources */,

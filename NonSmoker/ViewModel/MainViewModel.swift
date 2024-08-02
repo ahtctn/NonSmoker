@@ -8,7 +8,8 @@
 import SwiftUI
 
 class MainViewModel: ObservableObject {
-    @Published var smokedPopupShowed: Bool = false
+    @Published var activePopup: ActivePopup?
+    
     
     func setupTabBarAppearance() {
         let appearance = UITabBarAppearance()

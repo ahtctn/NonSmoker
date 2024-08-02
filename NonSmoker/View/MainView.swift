@@ -10,20 +10,27 @@ import SwiftUI
 struct MainView: View {
     @EnvironmentObject var timerManager: TimerManager
     @EnvironmentObject var mainViewModel: MainViewModel
+    
+    
     var body: some View {
         ZStack {
             Color.black.ignoresSafeArea(.all).opacity(0.9)
             CircleBackgroundView()
             VStack(spacing: 0) {
+                
                 HeaderView {
                     print("Settings button tapped")
+                    
+                } knowAct: {
+                    mainViewModel.activePopup = .know
                 }
+
                 
                 TimerView(timerManager: timerManager)
                 Spacer()
                 
                 DefaultButtonView("I Smoked, Restart") {
-                    mainViewModel.smokedPopupShowed = true
+                    mainViewModel.activePopup = .smokedRestart
                 }
                 .padding(.bottom, dynHeight * 0.05)
             }
@@ -41,3 +48,5 @@ struct MainView: View {
         .environmentObject(TimerManager())
         .environmentObject(MainViewModel())
 }
+
+
