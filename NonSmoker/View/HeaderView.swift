@@ -12,16 +12,11 @@ struct HeaderView: View {
     var knowAct: () -> ()
     var body: some View {
         HStack {
-            Image("no-smoking")
-                .resizable()
-                .scaledToFit()
-                .frame(width: dynWidth * 0.06, height: dynWidth * 0.06)
-            Spacer()
-            
             TopLittleButton("KNOW", i: "book.pages.fill") {
                 knowAct()
             }
             
+            Spacer()
             Button {
                 act()
             } label: {
