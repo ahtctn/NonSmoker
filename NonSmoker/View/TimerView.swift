@@ -63,7 +63,7 @@ struct TimeUnitView: View {
         VStack {
             ZStack {
                 RoundedRectangle(cornerRadius: 4)
-                    .stroke(.black, lineWidth: 4)
+                    .stroke(.black, lineWidth: 6)
                     .frame(width: 80, height: 80)
                     .overlay {
                         RoundedRectangle(cornerRadius: 4)
@@ -108,4 +108,8 @@ struct TimeUnitView: View {
                 }
             }
     }
+}
+
+#Preview {
+    TimeUnitView(timeUnit: 4, unit: "H")
 }

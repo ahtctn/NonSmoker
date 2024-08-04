@@ -84,8 +84,8 @@ struct AchievementsCellView: View {
             .fill(.white)
             .frame(width: dynWidth * 0.9, height: dynWidth * 0.2133)
             .overlay {
-                 RoundedRectangle(cornerRadius: 4)
-                    .stroke(.black, lineWidth: 4)
+                 RoundedRectangle(cornerRadius: 2)
+                    .stroke(.black, lineWidth: 6)
                     .overlay {
                         HStack {
                             model.image

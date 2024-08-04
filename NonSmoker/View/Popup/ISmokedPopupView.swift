@@ -16,7 +16,7 @@ struct ISmokedPopupView: View {
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 4)
-                .stroke(.black, lineWidth: 8)
+                .stroke(.black, lineWidth: 10)
                 .frame(width: dynWidth * 0.89, height: dynWidth * 0.79)
             
             RoundedRectangle(cornerRadius: 4)
@@ -46,7 +46,7 @@ struct ISmokedPopupView: View {
                                 .fill(ConstantColors.rectangleLinearColor)
                                 .overlay {
                                     RoundedRectangle(cornerRadius: 4)
-                                        .stroke(.black, lineWidth: 4)
+                                        .stroke(.black, lineWidth: 6)
                                         .overlay {
                                             Text("Restart The Challenge")
                                                 .foregroundStyle(.black)

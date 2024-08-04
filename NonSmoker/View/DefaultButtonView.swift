@@ -67,7 +67,7 @@ struct DefaultButtonView: View {
                 }
                 .overlay {
                     RoundedRectangle(cornerRadius: 4)
-                        .stroke(.black, lineWidth: 4)
+                        .stroke(.black, lineWidth: 6)
                 }
         })
     }
