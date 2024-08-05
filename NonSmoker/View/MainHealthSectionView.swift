@@ -9,19 +9,30 @@ import SwiftUI
 
 struct MainHealthSectionView: View {
     @Binding var perc: Double
+    var width: Double
+    var height: Double
+    
+    init(perc: Binding<Double>,
+         width: Double = dynWidth * 0.4,
+         height: Double = dynWidth * 0.4) {
+        _perc = perc
+        self.width = width
+        self.height = height
+    }
+    
     var body: some View {
         VStack {
-            ChargingBarView(percentage: perc)
+            ChargingBarView(perc: perc, width: width, height: height)
                 .overlay {
                     RoundedRectangle(cornerRadius: 4)
                         .stroke(.black, lineWidth: 10)
-                        .frame(width: dynWidth * 0.4, height: dynWidth * 0.4)
+                        .frame(width: width, height: height)
                 }
         }
     }
 }
 
 #Preview {
-    MainHealthSectionView(perc: .constant(56))
+    MainHealthSectionView(perc: .constant(7))
 }
 

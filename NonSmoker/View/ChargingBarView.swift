@@ -9,6 +9,16 @@ import SwiftUI
 
 struct ChargingBarView: View {
     var percentage: Double
+    var width: Double
+    var height: Double
+    
+    init(perc: Double,
+         width: Double = dynWidth * 0.4,
+         height: Double = dynWidth * 0.4) {
+        self.percentage = perc
+        self.width = width
+        self.height = height
+    }
     
     var body: some View {
         ZStack(alignment: .bottom) {
@@ -17,18 +27,20 @@ struct ChargingBarView: View {
             
             RoundedRectangle(cornerRadius: 4)
                 .fill(getColor(percentage))
-                .frame(height: (dynWidth * 0.4) * CGFloat(percentage / 100))
+                .frame(height: (height) * CGFloat(percentage / 100))
         }
-        .frame(width: dynWidth * 0.4, height: dynWidth * 0.4)
+        .frame(width: width, height: height)
         .cornerRadius(10)
         .overlay(
             VStack(alignment: .leading) {
-                Text("Health")
-                    .font(
-                        .system(size: 34)
-                    )
-                    .fontWeight(.bold)
-                    .foregroundColor(.black)
+                if width >= dynWidth * 0.4 {
+                    Text("Health")
+                        .font(
+                            .system(size: 34)
+                        )
+                        .fontWeight(.bold)
+                        .foregroundColor(.black)
+                }
                 
                 Text("\(Int(percentage))%")
                     .font(
@@ -59,5 +71,5 @@ struct ChargingBarView: View {
 
 
 #Preview {
-    ChargingBarView(percentage: 81)
+    ChargingBarView(perc: 85)
 }

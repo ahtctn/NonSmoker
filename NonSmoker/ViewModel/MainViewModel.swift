@@ -9,7 +9,7 @@ import SwiftUI
 
 class MainViewModel: ObservableObject {
     @Published var activePopup: ActivePopup?
-    
+    @Published var activeSheet: ActiveSheet?
     
     func setupTabBarAppearance() {
         let appearance = UITabBarAppearance()

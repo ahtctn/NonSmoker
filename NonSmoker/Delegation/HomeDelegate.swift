@@ -27,6 +27,7 @@ struct HomeDelegate: View {
                         Label("Achievements", systemImage: "trophy.fill")
                     }
                 HealthView()
+                    .environmentObject(mainVM)
                     .tabItem {
                         Label("Health", systemImage: "heart.fill")
                     }

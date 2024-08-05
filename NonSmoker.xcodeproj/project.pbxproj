@@ -40,8 +40,18 @@
 		7B7189CF2C569386006F106B /* deathNergis.json in Resources */ = {isa = PBXBuildFile; fileRef = 7B7189CE2C569386006F106B /* deathNergis.json */; };
 		7B7189D12C5693D6006F106B /* deathnotpro.json in Resources */ = {isa = PBXBuildFile; fileRef = 7B7189D02C5693D6006F106B /* deathnotpro.json */; };
 		7B7189D92C569A70006F106B /* again.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7B7189D82C569A70006F106B /* again.mp3 */; };
+		7B751E1B2C61312800FBCB2B /* HealthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B751E1A2C61312800FBCB2B /* HealthViewModel.swift */; };
+		7B751E1D2C61318F00FBCB2B /* HealthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B751E1C2C61318F00FBCB2B /* HealthModel.swift */; };
+		7B751E1F2C613F0500FBCB2B /* HealthSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B751E1E2C613F0500FBCB2B /* HealthSheetView.swift */; };
+		7B751E212C613FC700FBCB2B /* HealthCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B751E202C613FC700FBCB2B /* HealthCellView.swift */; };
 		7B8E73C72C5F98E400FB5CA3 /* MainHealthSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8E73C62C5F98E400FB5CA3 /* MainHealthSectionView.swift */; };
 		7B8E73C92C5F9E3200FB5CA3 /* ChargingBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8E73C82C5F9E3200FB5CA3 /* ChargingBarView.swift */; };
+		7B9BECFA2C60E91B00E48ACA /* BottomSheetModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9BECF92C60E91B00E48ACA /* BottomSheetModifier.swift */; };
+		7B9BECFC2C60E98800E48ACA /* ActiveSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9BECFB2C60E98800E48ACA /* ActiveSheet.swift */; };
+		7B9BECFE2C60EB0C00E48ACA /* AchievementsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9BECFD2C60EB0C00E48ACA /* AchievementsViewModel.swift */; };
+		7B9BED002C60EB2900E48ACA /* AchievementsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9BECFF2C60EB2900E48ACA /* AchievementsModel.swift */; };
+		7B9BED022C60EB4900E48ACA /* AchievementsCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9BED012C60EB4900E48ACA /* AchievementsCellView.swift */; };
+		7B9BED062C60EBD200E48ACA /* AchievementSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9BED052C60EBD200E48ACA /* AchievementSheetView.swift */; };
 		7BA24BF82C55AD1B00A0CE0C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA24BF72C55AD1B00A0CE0C /* MainView.swift */; };
 		7BA24BFA2C55ADEA00A0CE0C /* AchievementsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA24BF92C55ADEA00A0CE0C /* AchievementsView.swift */; };
 		7BA24BFC2C55ADF800A0CE0C /* HealthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA24BFB2C55ADF800A0CE0C /* HealthView.swift */; };
@@ -84,8 +94,18 @@
 		7B7189CE2C569386006F106B /* deathNergis.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = deathNergis.json; sourceTree = "<group>"; };
 		7B7189D02C5693D6006F106B /* deathnotpro.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = deathnotpro.json; sourceTree = "<group>"; };
 		7B7189D82C569A70006F106B /* again.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = again.mp3; sourceTree = "<group>"; };
+		7B751E1A2C61312800FBCB2B /* HealthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthViewModel.swift; sourceTree = "<group>"; };
+		7B751E1C2C61318F00FBCB2B /* HealthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthModel.swift; sourceTree = "<group>"; };
+		7B751E1E2C613F0500FBCB2B /* HealthSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthSheetView.swift; sourceTree = "<group>"; };
+		7B751E202C613FC700FBCB2B /* HealthCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthCellView.swift; sourceTree = "<group>"; };
 		7B8E73C62C5F98E400FB5CA3 /* MainHealthSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHealthSectionView.swift; sourceTree = "<group>"; };
 		7B8E73C82C5F9E3200FB5CA3 /* ChargingBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargingBarView.swift; sourceTree = "<group>"; };
+		7B9BECF92C60E91B00E48ACA /* BottomSheetModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetModifier.swift; sourceTree = "<group>"; };
+		7B9BECFB2C60E98800E48ACA /* ActiveSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveSheet.swift; sourceTree = "<group>"; };
+		7B9BECFD2C60EB0C00E48ACA /* AchievementsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsViewModel.swift; sourceTree = "<group>"; };
+		7B9BECFF2C60EB2900E48ACA /* AchievementsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsModel.swift; sourceTree = "<group>"; };
+		7B9BED012C60EB4900E48ACA /* AchievementsCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsCellView.swift; sourceTree = "<group>"; };
+		7B9BED052C60EBD200E48ACA /* AchievementSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementSheetView.swift; sourceTree = "<group>"; };
 		7BA24BF72C55AD1B00A0CE0C /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		7BA24BF92C55ADEA00A0CE0C /* AchievementsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsView.swift; sourceTree = "<group>"; };
 		7BA24BFB2C55ADF800A0CE0C /* HealthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthView.swift; sourceTree = "<group>"; };
@@ -112,6 +132,7 @@
 				7B41F2AE2C5D55DE00DE7F7A /* SubtitleModifier.swift */,
 				7B41F2B22C5D612800DE7F7A /* XMarkView.swift */,
 				7B70E37B2C5D7246006B53DD /* AnimatedGradient.swift */,
+				7B9BECF92C60E91B00E48ACA /* BottomSheetModifier.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -120,6 +141,8 @@
 			isa = PBXGroup;
 			children = (
 				7B41F2AA2C5D504300DE7F7A /* AdviceModel.swift */,
+				7B9BECFF2C60EB2900E48ACA /* AchievementsModel.swift */,
+				7B751E1C2C61318F00FBCB2B /* HealthModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -197,11 +220,15 @@
 				7B5083502C54E9F50051552A /* DefaultButtonView.swift */,
 				7B5083612C54ECF30051552A /* HeaderView.swift */,
 				7BA24BF72C55AD1B00A0CE0C /* MainView.swift */,
+				7B9BED052C60EBD200E48ACA /* AchievementSheetView.swift */,
 				7B8E73C62C5F98E400FB5CA3 /* MainHealthSectionView.swift */,
+				7B751E1E2C613F0500FBCB2B /* HealthSheetView.swift */,
 				7B8E73C82C5F9E3200FB5CA3 /* ChargingBarView.swift */,
 				7BA24BF92C55ADEA00A0CE0C /* AchievementsView.swift */,
+				7B751E202C613FC700FBCB2B /* HealthCellView.swift */,
 				7BA24BFB2C55ADF800A0CE0C /* HealthView.swift */,
 				7B41F2B42C5D617100DE7F7A /* AdviceView.swift */,
+				7B9BED012C60EB4900E48ACA /* AchievementsCellView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -222,6 +249,7 @@
 				7B5083522C54E9FC0051552A /* Constants.swift */,
 				7B41F2A52C5D4D5000DE7F7A /* ActivePopup.swift */,
 				7B70E3792C5D6CCD006B53DD /* Hex.swift */,
+				7B9BECFB2C60E98800E48ACA /* ActiveSheet.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -273,8 +301,10 @@
 			isa = PBXGroup;
 			children = (
 				7BA24BFE2C55B0C700A0CE0C /* MainViewModel.swift */,
+				7B751E1A2C61312800FBCB2B /* HealthViewModel.swift */,
 				7B41F2A72C5D4F0200DE7F7A /* AdviceViewModel.swift */,
 				7B7189BF2C56873A006F106B /* ISmokedPopupViewModel.swift */,
+				7B9BECFD2C60EB0C00E48ACA /* AchievementsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -362,23 +392,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B5083552C54EA050051552A /* TimerView.swift in Sources */,
+				7B9BECFC2C60E98800E48ACA /* ActiveSheet.swift in Sources */,
 				7B5083532C54E9FC0051552A /* Constants.swift in Sources */,
 				7B41F2B32C5D612800DE7F7A /* XMarkView.swift in Sources */,
 				7B5083592C54EA120051552A /* CircleBackgroundView.swift in Sources */,
+				7B9BED002C60EB2900E48ACA /* AchievementsModel.swift in Sources */,
 				7B41F2B52C5D617100DE7F7A /* AdviceView.swift in Sources */,
+				7B751E1F2C613F0500FBCB2B /* HealthSheetView.swift in Sources */,
 				7B8E73C72C5F98E400FB5CA3 /* MainHealthSectionView.swift in Sources */,
 				7B7189B62C56849B006F106B /* LottieAnimationViewHelper.swift in Sources */,
+				7B751E1D2C61318F00FBCB2B /* HealthModel.swift in Sources */,
 				7B41F2AF2C5D55DE00DE7F7A /* SubtitleModifier.swift in Sources */,
 				7B5083572C54EA0A0051552A /* FontHandler.swift in Sources */,
 				7B41F2A82C5D4F0200DE7F7A /* AdviceViewModel.swift in Sources */,
+				7B751E1B2C61312800FBCB2B /* HealthViewModel.swift in Sources */,
 				7BA24BFA2C55ADEA00A0CE0C /* AchievementsView.swift in Sources */,
 				7B50834F2C54E9E90051552A /* TimerManager.swift in Sources */,
+				7B9BED022C60EB4900E48ACA /* AchievementsCellView.swift in Sources */,
 				7B5083622C54ECF30051552A /* HeaderView.swift in Sources */,
 				7B41F2AB2C5D504300DE7F7A /* AdviceModel.swift in Sources */,
 				7B41F2A62C5D4D5000DE7F7A /* ActivePopup.swift in Sources */,
 				7B8E73C92C5F9E3200FB5CA3 /* ChargingBarView.swift in Sources */,
 				7B7189C02C56873A006F106B /* ISmokedPopupViewModel.swift in Sources */,
 				7B70E37A2C5D6CCD006B53DD /* Hex.swift in Sources */,
+				7B751E212C613FC700FBCB2B /* HealthCellView.swift in Sources */,
 				7BA24BFF2C55B0C700A0CE0C /* MainViewModel.swift in Sources */,
 				7B41F2AD2C5D54DA00DE7F7A /* TitleModifier.swift in Sources */,
 				7B5083432C54E9270051552A /* HomeDelegate.swift in Sources */,
@@ -387,10 +424,13 @@
 				7B70E37C2C5D7246006B53DD /* AnimatedGradient.swift in Sources */,
 				7B50835C2C54EAC80051552A /* AudioPlayerManager.swift in Sources */,
 				7B7189B32C5683E2006F106B /* ISmokedPopupView.swift in Sources */,
+				7B9BECFA2C60E91B00E48ACA /* BottomSheetModifier.swift in Sources */,
+				7B9BED062C60EBD200E48ACA /* AchievementSheetView.swift in Sources */,
 				7B41F2A32C5D4B9E00DE7F7A /* TopLittleButton.swift in Sources */,
 				7B7189AE2C5682F4006F106B /* NotificationManager.swift in Sources */,
 				7B5083412C54E9270051552A /* NonSmokerApp.swift in Sources */,
 				7BA24BFC2C55ADF800A0CE0C /* HealthView.swift in Sources */,
+				7B9BECFE2C60EB0C00E48ACA /* AchievementsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

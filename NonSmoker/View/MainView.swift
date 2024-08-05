@@ -14,7 +14,7 @@ struct MainView: View {
     @State private var perc: Double = 11
     @State private var perc1: Double = 25
     @State private var perc2: Double = 62
-    @State private var perc3: Double = 85
+    @State private var perc3: Double = 81
     
     var body: some View {
         ZStack {
