@@ -51,7 +51,7 @@ struct HealthView: View {
                                 HStack {
                                     Spacer()
                                     if type.id == 0 {
-                                        MainHealthSectionView(perc: .constant(81), width: dynWidth * 0.2, height: dynWidth * 0.2)
+                                        MainHealthSectionView(perc: .constant(11), width: dynWidth * 0.2, height: dynWidth * 0.2, stroke: 6)
                                     }
                                 }
                                 Spacer()

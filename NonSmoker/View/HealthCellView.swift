@@ -33,7 +33,7 @@ struct HealthCellView: View {
                                     .bold()
                                 
                                 Text(model.subtitle)
-                                    .foregroundStyle(.secondary)
+                                    .foregroundStyle(.black)
                                     .bold()
                                     .font(.system(size: 14))
                                     .bold()
