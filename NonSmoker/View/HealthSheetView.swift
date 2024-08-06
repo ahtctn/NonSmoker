@@ -22,8 +22,8 @@ struct HealthSheetView: View {
                         RoundedRectangle(cornerRadius: 4)
                             .stroke(.black, lineWidth: 8)
                             .overlay {
-                                VStack(alignment: .leading, spacing: 30) {
-                                    VStack(alignment: .leading, spacing: 22) {
+                                VStack(alignment: .center, spacing: 30) {
+                                    VStack(alignment: .center, spacing: 22) {
                                         Text(model.title).bold()
                                             .font(.system(size: 32))
                                             .foregroundStyle(.black)
@@ -31,6 +31,7 @@ struct HealthSheetView: View {
                                         Text(model.explanation)
                                             .font(.system(size: 18))
                                             .foregroundStyle(.black)
+                                            .multilineTextAlignment(.center)
                                     }
                                     
                                     DefaultButtonView(width: 0.7, "Okay") {
