@@ -28,6 +28,7 @@
 		7B5083592C54EA120051552A /* CircleBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5083582C54EA110051552A /* CircleBackgroundView.swift */; };
 		7B50835C2C54EAC80051552A /* AudioPlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B50835A2C54EAC80051552A /* AudioPlayerManager.swift */; };
 		7B5083622C54ECF30051552A /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5083612C54ECF30051552A /* HeaderView.swift */; };
+		7B620C342CADB6D00002917B /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B620C332CADB6D00002917B /* SettingsView.swift */; };
 		7B70E37A2C5D6CCD006B53DD /* Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B70E3792C5D6CCD006B53DD /* Hex.swift */; };
 		7B70E37C2C5D7246006B53DD /* AnimatedGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B70E37B2C5D7246006B53DD /* AnimatedGradient.swift */; };
 		7B70E37E2C5DA833006B53DD /* restartSmoking.json in Resources */ = {isa = PBXBuildFile; fileRef = 7B70E37D2C5DA833006B53DD /* restartSmoking.json */; };
@@ -81,6 +82,7 @@
 		7B5083582C54EA110051552A /* CircleBackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleBackgroundView.swift; sourceTree = "<group>"; };
 		7B50835A2C54EAC80051552A /* AudioPlayerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlayerManager.swift; sourceTree = "<group>"; };
 		7B5083612C54ECF30051552A /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		7B620C332CADB6D00002917B /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		7B70E3792C5D6CCD006B53DD /* Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hex.swift; sourceTree = "<group>"; };
 		7B70E37B2C5D7246006B53DD /* AnimatedGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedGradient.swift; sourceTree = "<group>"; };
 		7B70E37D2C5DA833006B53DD /* restartSmoking.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = restartSmoking.json; sourceTree = "<group>"; };
@@ -229,6 +231,7 @@
 				7BA24BFB2C55ADF800A0CE0C /* HealthView.swift */,
 				7B41F2B42C5D617100DE7F7A /* AdviceView.swift */,
 				7B9BED012C60EB4900E48ACA /* AchievementsCellView.swift */,
+				7B620C332CADB6D00002917B /* SettingsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -396,6 +399,7 @@
 				7B5083532C54E9FC0051552A /* Constants.swift in Sources */,
 				7B41F2B32C5D612800DE7F7A /* XMarkView.swift in Sources */,
 				7B5083592C54EA120051552A /* CircleBackgroundView.swift in Sources */,
+				7B620C342CADB6D00002917B /* SettingsView.swift in Sources */,
 				7B9BED002C60EB2900E48ACA /* AchievementsModel.swift in Sources */,
 				7B41F2B52C5D617100DE7F7A /* AdviceView.swift in Sources */,
 				7B751E1F2C613F0500FBCB2B /* HealthSheetView.swift in Sources */,

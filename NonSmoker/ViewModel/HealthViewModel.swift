@@ -8,6 +8,7 @@
 import SwiftUI
 
 class HealthViewModel: ObservableObject {
+    @Published var selectedCell: HealthModel? = nil
     var health: [HealthModel] = []
     var healthTypes = [
         HealthTypeModel(id: 0, name: "Started", emoj: "🏁"),

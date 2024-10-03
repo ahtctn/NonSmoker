@@ -22,7 +22,7 @@ struct AchievementSheetView: View {
                         RoundedRectangle(cornerRadius: 4)
                             .stroke(.black, lineWidth: 8)
                             .overlay {
-                                VStack(alignment: .leading, spacing: 30) {
+                                VStack(spacing: 30) {
                                     VStack(alignment: .leading, spacing: 22) {
                                         Text(model.title).bold()
                                             .font(.system(size: 32))
@@ -32,6 +32,7 @@ struct AchievementSheetView: View {
                                             .font(.system(size: 18))
                                             .foregroundStyle(.black)
                                     }
+                                    .padding([.leading, .trailing], dynWidth * 0.0533)
                                     
                                     DefaultButtonView(width: 0.7, "Okay") {
                                         act()

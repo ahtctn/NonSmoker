@@ -10,6 +10,7 @@ import Foundation
 enum ActiveSheet: Identifiable {
     case achievement
     case health
+    case settings
     
     var id: Int {
         hashValue

@@ -19,30 +19,28 @@ struct MainView: View {
     var body: some View {
         ZStack {
             ConstantColors.baseColor.ignoresSafeArea(.all)
-            VStack(spacing: 0) {
-                
+            VStack {
                 HeaderView {
-                    print("Settings button tapped")
-                    
-                } knowAct: {
                     withAnimation(.smooth) {
                         mainViewModel.activePopup = .know
                     }
+                } settingsAct: {
+                    withAnimation(.smooth) {
+                        mainViewModel.activeSheet = .settings
+                    }
                 }
 
-                
                 TimerView(timerManager: timerManager)
                 VStack(spacing: 20) {
-                    HStack(spacing: 20) {
+                    HStack(spacing: 10) {
                         Spacer()
                         MainHealthSectionView(perc: $perc)
                         Spacer()
                         MainHealthSectionView(perc: $perc1)
                         Spacer()
-                        
                     }
                     
-                    HStack(spacing: 20) {
+                    HStack(spacing: 10) {
                         Spacer()
                         MainHealthSectionView(perc: $perc2)
                         Spacer()
@@ -53,12 +51,6 @@ struct MainView: View {
                 }
                 Spacer()
                 
-                
-                
-                DefaultButtonView("I Smoked, Restart") {
-                    mainViewModel.activePopup = .smokedRestart
-                }
-                .padding(.bottom, dynHeight * 0.05)
             }
             .onAppear {
                 timerManager.startTimer()

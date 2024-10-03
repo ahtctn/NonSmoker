@@ -8,20 +8,21 @@
 import SwiftUI
 
 struct HealthView: View {
-    @StateObject var viewModel: HealthViewModel = HealthViewModel()
+    @EnvironmentObject var viewModel: HealthViewModel
     @EnvironmentObject var mainVM: MainViewModel
-    @State private var selectedCell: HealthModel? = nil
-    @State private var activeSheet: ActiveSheet? = nil
+    
     
     var body: some View {
         ZStack {
             ConstantColors.baseColor.ignoresSafeArea(.all)
             VStack {
                 HeaderView {
-                    print("Settings Button Tapped")
-                } knowAct: {
                     withAnimation(.smooth) {
                         mainVM.activePopup = .know
+                    }
+                } settingsAct: {
+                    withAnimation(.smooth) {
+                        mainVM.activeSheet = .settings
                     }
                 }
             
@@ -37,11 +38,10 @@ struct HealthView: View {
                                 ForEach(viewModel.health, id: \.id) { health in
                                     if health.healthType.id == type.id {
                                         HealthCellView(model: health) {
-                                            selectedCell = health
-                                            activeSheet = .health
+                                            viewModel.selectedCell = health
+                                            mainVM.activeSheet = .health
                                         }
                                     }
-                                    
                                 }
                             }
                             .padding([.leading, .trailing], dynWidth * 0.05)
@@ -59,29 +59,7 @@ struct HealthView: View {
                             .padding(.top, dynWidth * 0.01)
                             .padding(.trailing, dynWidth * 0.02)
                         }
-                        
-                        
-                        
-                        
                     }
-                }
-                
-            }
-            
-            .sheet(item: $activeSheet) { _ in
-                switch activeSheet {
-                case .achievement:
-                    EmptyView()
-                case .health:
-                    if let cell = selectedCell {
-                        HealthSheetView(model: cell) {
-                            activeSheet = nil
-                            selectedCell = nil
-                        }
-                        .modifier(BottomSheetModifier(0.5))
-                    }
-                default:
-                    EmptyView()
                 }
             }
         }

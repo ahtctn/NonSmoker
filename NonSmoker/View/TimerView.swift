@@ -15,39 +15,22 @@ struct TimerView: View {
         ZStack {
             Color.clear.ignoresSafeArea(.all)
             timerView
+                .padding([.leading, .trailing], dynWidth * 0.0533)
         }
         .frame(height: dynHeight * 0.3)
     }
-    
-    private var sepratorDots: some View {
-        VStack {
-            Spacer()
-            Text(":")
-                .foregroundStyle(.white)
-                .font(.system(size: 26))
-                .fontWeight(.bold)
-            Spacer()
-        }
-    }
-    
     private var timerView: some View {
         VStack {
-            HStack(spacing: 10) {
+            HStack(spacing: 5) {
                 TimeUnitView(timeUnit: Int(timerManager.elapsedTime) / (60 * 60 * 24 * 365), unit: "Y")
-                sepratorDots
                 TimeUnitView(timeUnit: (Int(timerManager.elapsedTime) / (60 * 60 * 24 * 30)) % 12, unit: "M")
-                sepratorDots
                 TimeUnitView(timeUnit: (Int(timerManager.elapsedTime) / (60 * 60 * 24 * 7)) % 4, unit: "W")
-                sepratorDots
                 TimeUnitView(timeUnit: (Int(timerManager.elapsedTime) / (60 * 60 * 24)) % 7, unit: "D")
             }
-            HStack(spacing: 10) {
+            HStack(spacing: 5) {
                 TimeUnitView(timeUnit: (Int(timerManager.elapsedTime) / 3600) % 24, unit: "H")
-                sepratorDots
                 TimeUnitView(timeUnit: (Int(timerManager.elapsedTime) / 60) % 60, unit: "M")
-                sepratorDots
                 TimeUnitView(timeUnit: Int(timerManager.elapsedTime) % 60, unit: "S")
-                sepratorDots
                 TimeUnitView(timeUnit: Int(timerManager.elapsedTime.truncatingRemainder(dividingBy: 1) * 100), unit: "MS")
             }
         }

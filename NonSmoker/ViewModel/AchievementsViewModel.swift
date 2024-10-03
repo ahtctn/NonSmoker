@@ -8,6 +8,7 @@
 import SwiftUI
 
 class AchievementsViewModel: ObservableObject {
+    @Published var selectedCell: AchievementsModel? = nil
     var achievements: [AchievementsModel] = []
     init() {
         fetchAchievements()

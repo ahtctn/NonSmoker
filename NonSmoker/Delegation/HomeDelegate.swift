@@ -12,6 +12,8 @@ struct HomeDelegate: View {
     @StateObject private var timerManager = TimerManager()
     @EnvironmentObject var mainVM: MainViewModel
     @StateObject private var adviceVM: AdviceViewModel = AdviceViewModel()
+    @StateObject var healthVM: HealthViewModel = HealthViewModel()
+    @StateObject var achievementsVM: AchievementsViewModel = AchievementsViewModel()
     
     var body: some View {
         ZStack {
@@ -23,6 +25,7 @@ struct HomeDelegate: View {
                     }
                 AchievementsView()
                     .environmentObject(mainVM)
+                    .environmentObject(achievementsVM)
                     .tabItem {
                         Label("Achievements", systemImage: "trophy.fill")
                     }
@@ -31,9 +34,38 @@ struct HomeDelegate: View {
                     .tabItem {
                         Label("Health", systemImage: "heart.fill")
                     }
+                    .environmentObject(healthVM)
             }
             .onAppear {
                 mainVM.setupTabBarAppearance()
+            }
+            
+            .sheet(item: $mainVM.activeSheet) { _ in
+                switch mainVM.activeSheet {
+                case .achievement:
+                    if let model = achievementsVM.selectedCell {
+                        AchievementSheetView(model: model) {
+                            mainVM.activeSheet = nil
+                            achievementsVM.selectedCell = nil
+                        }
+                        .modifier(BottomSheetModifier(0.5))
+                    }
+                case .health:
+                    if let cell = healthVM.selectedCell {
+                        HealthSheetView(model: cell) {
+                            mainVM.activeSheet = nil
+                            healthVM.selectedCell = nil
+                        }
+                        .modifier(BottomSheetModifier(0.5))
+                    }
+                case .settings:
+                    SettingsView()
+                        .environmentObject(mainVM)
+                        .modifier(BottomSheetModifier(0.88))
+                case .none:
+                    EmptyView()
+                    
+                }
             }
             
             

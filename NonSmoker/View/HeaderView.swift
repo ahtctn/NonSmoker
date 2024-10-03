@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct HeaderView: View {
-    var act: () -> ()
     var knowAct: () -> ()
+    var settingsAct: () -> ()
     var body: some View {
         HStack {
             TopLittleButton("KNOW", i: "book.pages.fill") {
@@ -18,7 +18,7 @@ struct HeaderView: View {
             
             Spacer()
             Button {
-                act()
+                settingsAct()
             } label: {
                 Image(systemName: "gear")
                     .resizable()
@@ -53,7 +53,7 @@ struct HeaderView: View {
 #Preview {
     ZStack {
         Color.black.ignoresSafeArea(.all)
-        HeaderView(act: {}, knowAct: {})
+        HeaderView(knowAct: {}, settingsAct: {})
     }
 }
 
