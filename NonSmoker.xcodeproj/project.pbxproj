@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B0686322CD19CDC00A96EE6 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0686312CD19CDC00A96EE6 /* SettingsViewModel.swift */; };
 		7B41F2A32C5D4B9E00DE7F7A /* TopLittleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B41F2A22C5D4B9E00DE7F7A /* TopLittleButton.swift */; };
 		7B41F2A62C5D4D5000DE7F7A /* ActivePopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B41F2A52C5D4D5000DE7F7A /* ActivePopup.swift */; };
 		7B41F2A82C5D4F0200DE7F7A /* AdviceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B41F2A72C5D4F0200DE7F7A /* AdviceViewModel.swift */; };
@@ -60,6 +61,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7B0686312CD19CDC00A96EE6 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		7B41F2A22C5D4B9E00DE7F7A /* TopLittleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopLittleButton.swift; sourceTree = "<group>"; };
 		7B41F2A52C5D4D5000DE7F7A /* ActivePopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivePopup.swift; sourceTree = "<group>"; };
 		7B41F2A72C5D4F0200DE7F7A /* AdviceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdviceViewModel.swift; sourceTree = "<group>"; };
@@ -308,6 +310,7 @@
 				7B41F2A72C5D4F0200DE7F7A /* AdviceViewModel.swift */,
 				7B7189BF2C56873A006F106B /* ISmokedPopupViewModel.swift */,
 				7B9BECFD2C60EB0C00E48ACA /* AchievementsViewModel.swift */,
+				7B0686312CD19CDC00A96EE6 /* SettingsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -435,6 +438,7 @@
 				7B5083412C54E9270051552A /* NonSmokerApp.swift in Sources */,
 				7BA24BFC2C55ADF800A0CE0C /* HealthView.swift in Sources */,
 				7B9BECFE2C60EB0C00E48ACA /* AchievementsViewModel.swift in Sources */,
+				7B0686322CD19CDC00A96EE6 /* SettingsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

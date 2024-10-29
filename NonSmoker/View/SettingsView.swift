@@ -9,6 +9,7 @@ import SwiftUI
 
 struct SettingsView: View {
     @EnvironmentObject var mainViewModel: MainViewModel
+    @StateObject private var vm = SettingsViewModel()
     var body: some View {
         ZStack {
             Color("base2").ignoresSafeArea(.all)
@@ -41,6 +42,10 @@ struct SettingsView: View {
                     
                     DefaultButtonView("Get Support") {
                         
+                    }
+                    
+                    DefaultButtonView("Books To Quit Smoking") {
+                        vm.openBookURL()
                     }
                     
                     
