@@ -16,7 +16,7 @@ struct HealthCellView: View {
             .frame(width: dynWidth * 0.35, height: dynWidth * 0.6)
             .overlay {
                 RoundedRectangle(cornerRadius: 4)
-                    .stroke(.black, lineWidth: 6)
+                    .stroke(.black, lineWidth: 4)
                     .overlay {
                         VStack {
                             Spacer().frame(height: dynWidth * 0.05)

@@ -27,10 +27,10 @@ struct AchievementsCellView: View {
                                 
                                 VStack(alignment: .leading, spacing: 10) {
                                     Text(model.title).bold()
-                                        .font(.system(size: 22))
+                                        .font(.system(size: 18))
                                         
                                     Text(model.subtitle)
-                                        .font(.system(size: 14))
+                                        .font(.system(size: 12))
                                 }
                                 .foregroundStyle(.black)
                                 .padding(.leading, dynWidth * 0.0533)

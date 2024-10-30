@@ -31,6 +31,7 @@ struct HomeDelegate: View {
                     }
                 HealthView()
                     .environmentObject(mainVM)
+                    .environmentObject(timerManager)
                     .tabItem {
                         Label("Health", systemImage: "heart.fill")
                     }
@@ -68,7 +69,6 @@ struct HomeDelegate: View {
                 }
             }
             
-            
             if mainVM.activePopup != nil {
                 switch mainVM.activePopup {
                 case .know:
@@ -87,9 +87,12 @@ struct HomeDelegate: View {
                     EmptyView()
                 }
             }
+            
         }
     }
 }
+
+
 
 #Preview {
     HomeDelegate()

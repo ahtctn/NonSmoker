@@ -13,7 +13,7 @@ struct AchievementsView: View {
     
     var body: some View {
         ZStack {
-            ConstantColors.baseColor.ignoresSafeArea(.all)
+            Color.baseClr.ignoresSafeArea(.all)
             VStack {
                 HeaderView {
                     withAnimation(.smooth) {
@@ -39,17 +39,9 @@ struct AchievementsView: View {
                 .scrollContentBackground(.hidden)
             }
                 
-            bottomGradient
+            BottomGradientView()
             
         }
-    }
-    
-    private var bottomGradient: some View {
-        VStack {
-            Spacer()
-            ConstantColors.blackToClearLinearColor.frame(height: dynWidth * 0.3)
-        }
-        .ignoresSafeArea(.all)
     }
 }
 

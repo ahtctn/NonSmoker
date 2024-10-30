@@ -11,15 +11,18 @@ import UserNotifications
 
 class TimerManager: ObservableObject {
     @Published var elapsedTime: Double = 0.0
+    @Published var progressPercentage: Double = 0.0
     private var timer: Timer?
     private var startDate: Date?
     private var lastSavedTime: Double = 0.0
+    private let totalYearTime: Double = 365 * 24 * 3600
     
     init() {
         self.lastSavedTime = UserDefaults.standard.double(forKey: "lastSavedTime")
         self.startDate = UserDefaults.standard.object(forKey: "startDate") as? Date
         if let startDate = self.startDate {
             self.elapsedTime = lastSavedTime + Date().timeIntervalSince(startDate)
+            updateProgressPercentage()
         } else {
             self.startDate = Date()
             UserDefaults.standard.set(self.startDate, forKey: "startDate")
@@ -32,6 +35,10 @@ class TimerManager: ObservableObject {
             self?.updateElapsedTime()
             self?.checkPassingTime()
         }
+    }
+    
+    func updateProgressPercentage() {
+        progressPercentage = min((elapsedTime / totalYearTime) * 100, 100)
     }
     
     func updateElapsedTime() {

@@ -12,13 +12,10 @@ struct MainView: View {
     @EnvironmentObject var mainViewModel: MainViewModel
     
     @State private var perc: Double = 11
-    @State private var perc1: Double = 25
-    @State private var perc2: Double = 62
-    @State private var perc3: Double = 81
     
     var body: some View {
         ZStack {
-            ConstantColors.baseColor.ignoresSafeArea(.all)
+            Color.baseClr.ignoresSafeArea(.all)
             VStack {
                 HeaderView {
                     withAnimation(.smooth) {
@@ -31,31 +28,25 @@ struct MainView: View {
                 }
 
                 TimerView(timerManager: timerManager)
-                VStack(spacing: 20) {
-                    HStack(spacing: 10) {
-                        Spacer()
-                        MainHealthSectionView(perc: $perc)
-                        Spacer()
-                        MainHealthSectionView(perc: $perc1)
-                        Spacer()
-                    }
-                    
-                    HStack(spacing: 10) {
-                        Spacer()
-                        MainHealthSectionView(perc: $perc2)
-                        Spacer()
-                        MainHealthSectionView(perc: $perc3)
-                        Spacer()
-                        
-                    }
-                }
+                MainHealthSectionView(perc: $timerManager.progressPercentage)
                 Spacer()
                 
             }
             .onAppear {
                 timerManager.startTimer()
             }
+            BottomGradientView()
         }
+    }
+}
+
+extension View {
+    private var bottomGradient: some View {
+        VStack {
+            Spacer()
+            ConstantColors.blackToClearLinearColor.frame(height: dynWidth * 0.3)
+        }
+        .ignoresSafeArea(.all)
     }
 }
 

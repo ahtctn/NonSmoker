@@ -58,6 +58,8 @@
 		7BA24BFA2C55ADEA00A0CE0C /* AchievementsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA24BF92C55ADEA00A0CE0C /* AchievementsView.swift */; };
 		7BA24BFC2C55ADF800A0CE0C /* HealthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA24BFB2C55ADF800A0CE0C /* HealthView.swift */; };
 		7BA24BFF2C55B0C700A0CE0C /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA24BFE2C55B0C700A0CE0C /* MainViewModel.swift */; };
+		7BBC5FC72CD22C7B001E37C9 /* BottomGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBC5FC62CD22C7B001E37C9 /* BottomGradientView.swift */; };
+		7BBC5FC92CD22CCC001E37C9 /* HealthSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBC5FC82CD22CCC001E37C9 /* HealthSectionHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -114,6 +116,8 @@
 		7BA24BF92C55ADEA00A0CE0C /* AchievementsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsView.swift; sourceTree = "<group>"; };
 		7BA24BFB2C55ADF800A0CE0C /* HealthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthView.swift; sourceTree = "<group>"; };
 		7BA24BFE2C55B0C700A0CE0C /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		7BBC5FC62CD22C7B001E37C9 /* BottomGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomGradientView.swift; sourceTree = "<group>"; };
+		7BBC5FC82CD22CCC001E37C9 /* HealthSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthSectionHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +135,7 @@
 		7B41F2A12C5D4B9400DE7F7A /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				7BBC5FC62CD22C7B001E37C9 /* BottomGradientView.swift */,
 				7B41F2A22C5D4B9E00DE7F7A /* TopLittleButton.swift */,
 				7B41F2AC2C5D54DA00DE7F7A /* TitleModifier.swift */,
 				7B41F2AE2C5D55DE00DE7F7A /* SubtitleModifier.swift */,
@@ -180,7 +185,6 @@
 				7B5083602C54ECEC0051552A /* View */,
 				7B50835E2C54EAE30051552A /* source */,
 				7B50835B2C54EAC80051552A /* Manager */,
-				7B5083442C54E9290051552A /* Assets.xcassets */,
 				7B5083462C54E9290051552A /* Preview Content */,
 			);
 			path = NonSmoker;
@@ -207,6 +211,7 @@
 		7B50835E2C54EAE30051552A /* source */ = {
 			isa = PBXGroup;
 			children = (
+				7BBC5FCE2CD230F6001E37C9 /* assets */,
 				7B7189BC2C5686E1006F106B /* animation */,
 				7B7189BB2C5686DE006F106B /* audio */,
 			);
@@ -234,6 +239,7 @@
 				7B41F2B42C5D617100DE7F7A /* AdviceView.swift */,
 				7B9BED012C60EB4900E48ACA /* AchievementsCellView.swift */,
 				7B620C332CADB6D00002917B /* SettingsView.swift */,
+				7BBC5FC82CD22CCC001E37C9 /* HealthSectionHeaderView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -313,6 +319,14 @@
 				7B0686312CD19CDC00A96EE6 /* SettingsViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7BBC5FCE2CD230F6001E37C9 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				7B5083442C54E9290051552A /* Assets.xcassets */,
+			);
+			path = assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -402,6 +416,7 @@
 				7B5083532C54E9FC0051552A /* Constants.swift in Sources */,
 				7B41F2B32C5D612800DE7F7A /* XMarkView.swift in Sources */,
 				7B5083592C54EA120051552A /* CircleBackgroundView.swift in Sources */,
+				7BBC5FC72CD22C7B001E37C9 /* BottomGradientView.swift in Sources */,
 				7B620C342CADB6D00002917B /* SettingsView.swift in Sources */,
 				7B9BED002C60EB2900E48ACA /* AchievementsModel.swift in Sources */,
 				7B41F2B52C5D617100DE7F7A /* AdviceView.swift in Sources */,
@@ -423,6 +438,7 @@
 				7B7189C02C56873A006F106B /* ISmokedPopupViewModel.swift in Sources */,
 				7B70E37A2C5D6CCD006B53DD /* Hex.swift in Sources */,
 				7B751E212C613FC700FBCB2B /* HealthCellView.swift in Sources */,
+				7BBC5FC92CD22CCC001E37C9 /* HealthSectionHeaderView.swift in Sources */,
 				7BA24BFF2C55B0C700A0CE0C /* MainViewModel.swift in Sources */,
 				7B41F2AD2C5D54DA00DE7F7A /* TitleModifier.swift in Sources */,
 				7B5083432C54E9270051552A /* HomeDelegate.swift in Sources */,
