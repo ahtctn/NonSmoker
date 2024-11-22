@@ -10,24 +10,24 @@ import SwiftUI
 struct AdviceView: View {
     @EnvironmentObject private var vm: AdviceViewModel
     @EnvironmentObject var mainVM: MainViewModel
-    
+    let anims = ["adviceAnim1", "adviceAnim2", "adviceAnim3", "adviceAnim4"]
 
     var body: some View {
         ZStack {
             AnimatedGradient(colors: [Color.red, Color.orange, Color.yellow]).ignoresSafeArea(.all)
             VStack {
                 Spacer()
-                
+                AdviceHeaderView(text: "Advice")
                 VStack(spacing: 15) {
                     Spacer()
-                    LottieAnimationViewHelper(name: "doctor", loopMode: .loop)
+                    LottieAnimationViewHelper(name: anims.randomElement()!, loopMode: .loop)
                         .frame(width: dynWidth * 0.6, height: dynWidth * 0.6)
-                    Spacer()
+                    //Spacer().frame(height: dynWidth * 0.08)
                     if let advice = vm.randomAdvice {
                         let title = advice.title
                         let subtitle = advice.subtitle
                         
-                        VStack(alignment: .leading, spacing: 30) {
+                        VStack(alignment: .leading, spacing: 10) {
                             Text(title)
                                 .titleModifier(.black)
                                 .background(
@@ -43,7 +43,7 @@ struct AdviceView: View {
                                 )
                             
                         }
-                        .padding([.leading, .trailing], dynWidth * 0.0426)
+                        .padding([.leading, .trailing], dynWidth * 0.1)
                         .foregroundStyle(.white)
                         
                     }
@@ -59,8 +59,6 @@ struct AdviceView: View {
             
            
         }
-        
-        
     }
 }
 
@@ -69,3 +67,5 @@ struct AdviceView: View {
         .environmentObject(MainViewModel())
         .environmentObject(AdviceViewModel())
 }
+
+

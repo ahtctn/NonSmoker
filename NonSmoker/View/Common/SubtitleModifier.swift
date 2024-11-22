@@ -18,7 +18,7 @@ struct SubtitleModifier: ViewModifier {
             .padding(.all, dynWidth * 0.08)
             .overlay {
                 RoundedRectangle(cornerRadius: 8)
-                    .stroke(color, lineWidth: 3)
+                    .stroke(color, lineWidth: 5)
             }
     }
 }

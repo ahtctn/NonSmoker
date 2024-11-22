@@ -18,7 +18,7 @@ struct TitleModifier: ViewModifier {
         
             .overlay {
                 RoundedRectangle(cornerRadius: 8)
-                    .stroke(.black, lineWidth: 3)
+                    .stroke(.black, lineWidth: 5)
             }
             
     }

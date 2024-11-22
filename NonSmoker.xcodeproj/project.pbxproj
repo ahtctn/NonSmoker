@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		7B0686322CD19CDC00A96EE6 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0686312CD19CDC00A96EE6 /* SettingsViewModel.swift */; };
+		7B3D606D2CF0ED8A0051437E /* adviceAnim1.json in Resources */ = {isa = PBXBuildFile; fileRef = 7B3D606A2CF0ED8A0051437E /* adviceAnim1.json */; };
+		7B3D606E2CF0ED8A0051437E /* adviceAnim2.json in Resources */ = {isa = PBXBuildFile; fileRef = 7B3D606C2CF0ED8A0051437E /* adviceAnim2.json */; };
+		7B3D60722CF0EED30051437E /* adviceAnim4.json in Resources */ = {isa = PBXBuildFile; fileRef = 7B3D60712CF0EED30051437E /* adviceAnim4.json */; };
+		7B3D60732CF0EED30051437E /* adviceAnim3.json in Resources */ = {isa = PBXBuildFile; fileRef = 7B3D60702CF0EED30051437E /* adviceAnim3.json */; };
+		7B3D60752CF0F04E0051437E /* AdviceHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3D60742CF0F04E0051437E /* AdviceHeaderView.swift */; };
 		7B41F2A32C5D4B9E00DE7F7A /* TopLittleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B41F2A22C5D4B9E00DE7F7A /* TopLittleButton.swift */; };
 		7B41F2A62C5D4D5000DE7F7A /* ActivePopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B41F2A52C5D4D5000DE7F7A /* ActivePopup.swift */; };
 		7B41F2A82C5D4F0200DE7F7A /* AdviceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B41F2A72C5D4F0200DE7F7A /* AdviceViewModel.swift */; };
@@ -64,6 +69,11 @@
 
 /* Begin PBXFileReference section */
 		7B0686312CD19CDC00A96EE6 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		7B3D606A2CF0ED8A0051437E /* adviceAnim1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = adviceAnim1.json; sourceTree = "<group>"; };
+		7B3D606C2CF0ED8A0051437E /* adviceAnim2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = adviceAnim2.json; sourceTree = "<group>"; };
+		7B3D60702CF0EED30051437E /* adviceAnim3.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = adviceAnim3.json; sourceTree = "<group>"; };
+		7B3D60712CF0EED30051437E /* adviceAnim4.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = adviceAnim4.json; sourceTree = "<group>"; };
+		7B3D60742CF0F04E0051437E /* AdviceHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdviceHeaderView.swift; sourceTree = "<group>"; };
 		7B41F2A22C5D4B9E00DE7F7A /* TopLittleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopLittleButton.swift; sourceTree = "<group>"; };
 		7B41F2A52C5D4D5000DE7F7A /* ActivePopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivePopup.swift; sourceTree = "<group>"; };
 		7B41F2A72C5D4F0200DE7F7A /* AdviceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdviceViewModel.swift; sourceTree = "<group>"; };
@@ -237,6 +247,7 @@
 				7B751E202C613FC700FBCB2B /* HealthCellView.swift */,
 				7BA24BFB2C55ADF800A0CE0C /* HealthView.swift */,
 				7B41F2B42C5D617100DE7F7A /* AdviceView.swift */,
+				7B3D60742CF0F04E0051437E /* AdviceHeaderView.swift */,
 				7B9BED012C60EB4900E48ACA /* AchievementsCellView.swift */,
 				7B620C332CADB6D00002917B /* SettingsView.swift */,
 				7BBC5FC82CD22CCC001E37C9 /* HealthSectionHeaderView.swift */,
@@ -292,6 +303,10 @@
 		7B7189BC2C5686E1006F106B /* animation */ = {
 			isa = PBXGroup;
 			children = (
+				7B3D60702CF0EED30051437E /* adviceAnim3.json */,
+				7B3D60712CF0EED30051437E /* adviceAnim4.json */,
+				7B3D606A2CF0ED8A0051437E /* adviceAnim1.json */,
+				7B3D606C2CF0ED8A0051437E /* adviceAnim2.json */,
 				7B7189C72C56922E006F106B /* smoke.json */,
 				7B41F2B02C5D580000DE7F7A /* doctor.json */,
 				7B70E37D2C5DA833006B53DD /* restartSmoking.json */,
@@ -398,9 +413,13 @@
 				7B7189C82C56922E006F106B /* smoke.json in Resources */,
 				7B7189D92C569A70006F106B /* again.mp3 in Resources */,
 				7B7189CF2C569386006F106B /* deathNergis.json in Resources */,
+				7B3D606D2CF0ED8A0051437E /* adviceAnim1.json in Resources */,
+				7B3D606E2CF0ED8A0051437E /* adviceAnim2.json in Resources */,
 				7B5083452C54E9290051552A /* Assets.xcassets in Resources */,
 				7B7189D12C5693D6006F106B /* deathnotpro.json in Resources */,
 				7B41F2B12C5D580000DE7F7A /* doctor.json in Resources */,
+				7B3D60722CF0EED30051437E /* adviceAnim4.json in Resources */,
+				7B3D60732CF0EED30051437E /* adviceAnim3.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +444,7 @@
 				7B7189B62C56849B006F106B /* LottieAnimationViewHelper.swift in Sources */,
 				7B751E1D2C61318F00FBCB2B /* HealthModel.swift in Sources */,
 				7B41F2AF2C5D55DE00DE7F7A /* SubtitleModifier.swift in Sources */,
+				7B3D60752CF0F04E0051437E /* AdviceHeaderView.swift in Sources */,
 				7B5083572C54EA0A0051552A /* FontHandler.swift in Sources */,
 				7B41F2A82C5D4F0200DE7F7A /* AdviceViewModel.swift in Sources */,
 				7B751E1B2C61312800FBCB2B /* HealthViewModel.swift in Sources */,
@@ -586,6 +606,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = NonSmoker/NonSmoker.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"NonSmoker/Preview Content\"";
@@ -605,6 +626,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.allymationes.NonSmoker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -617,6 +639,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = NonSmoker/NonSmoker.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"NonSmoker/Preview Content\"";
@@ -636,6 +659,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.allymationes.NonSmoker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
