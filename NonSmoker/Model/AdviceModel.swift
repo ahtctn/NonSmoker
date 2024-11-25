@@ -11,4 +11,3 @@ struct AdviceModel {
     let title: String
     let subtitle: String
 }
-//change
